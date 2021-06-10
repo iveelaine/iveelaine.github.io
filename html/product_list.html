@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/type.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link rel="stylesheet" type="text/css" ref="https://fonts.google.com/specimen/Montserrat?query=montser#standard-styles">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/function.js"></script>
+</head>
+<body class="productListBody">
+    
+     <!-------------------------------------- Navigation Bar ---------------------------------------->
+     <!-- Navigation Bar -->
+     <nav class="nav">   
+        <!-- Hamburger -->
+       <div class="hamburger">
+            <img src="/img/assets/hamburger.png" alt="hamburger" class="hamburgerButton" onclick="openNav()">
+       </div>
+        
+        <!-- Logo -->
+       <div class="logo">
+           <a href="/html/home.html"><img class = "logoImage" src="/img/assets/logo.png" alt=""></a>
+       </div>
+       
+        <!-- Search box and icon -->
+        <div class="search">
+           <input class="searchBox" type="text" placeholder="Search..">
+           <a href=""><img class = "searchImage" src="/img/assets/search.png" alt="search button"></a>
+        </div>
+     </nav>
+
+     <!--------------------------------------- Side Nav -------------------------------------------->
+     <!-- Side Bar -->
+     <div class="menu">
+
+        <div class="sidenav" id="mySidenav">
+
+            <a href="javascript:void(0)" onclick="openCart()"><img class="cartImage" src="/img/assets/cart.png" alt="cart"></a>
+            <a href="javascript:void(0)" onclick="closeNav()"><img class="closeButton" src="/img/assets/xbutton.png" alt="x button"></a>
+
+            <div class="sideNavContent">
+                <a href="">About</a>
+                <a href="">Categories</a>
+                <a href="">FAQs</a>
+                <a href="">Contact Us</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Shipping</a>
+            </div>
+        </div>
+
+        <div class="sideCart" id="sideCart">
+
+            <a href="javascript:void(0)" onclick="closeCart()"><img class="closeButton" src="/img/assets/xbuttoncart.png" alt="x button"></a>
+            
+            <div class="cartContainer">
+                <div class="cartTop">
+                    <div class="cartItem">
+                        <img src="/img/products/catan base game.png" alt="cartProductImage" class="cartProductImage">
+                        
+                        <div class="cartInformation">
+                            <h3 class="cartproductname">Catan (2015 Edition)</h3>
+                            <label for="quantity" class="qtylabel">Qty:</label>
+                            <input name="quantity" type="number" class="qty">
+                        </div>
+                        <div class="cartPrice">
+                            <h3>£35.99</h3>
+                            <img src="/img/assets/trash.png" alt="trashImage" class="trashImage">
+                        </div>
+                    </div>
+                    <div class="cartItem">
+                        <img src="/img/products/catan base game.png" alt="cartProductImage" class="cartProductImage">
+                        
+                        <div class="cartInformation">
+                            <h3 class="cartproductname">Catan (2015 Edition)</h3>
+                            <label for="quantity" class="qtylabel">Qty:</label>
+                            <input name="quantity" type="number" class="qty">
+                        </div>
+                        <div class="cartPrice">
+                            <h3>£35.99</h3>
+                            <img src="/img/assets/trash.png" alt="trashImage" class="trashImage">
+                        </div>
+                    </div>
+                    <div class="cartItem">
+                        <img src="/img/products/catan base game.png" alt="cartProductImage" class="cartProductImage">
+                        
+                        <div class="cartInformation">
+                            <h3 class="cartproductname">Catan (2015 Edition)</h3>
+                            <label for="quantity" class="qtylabel">Qty:</label>
+                            <input name="quantity" type="number" class="qty">
+                        </div>
+                        <div class="cartPrice">
+                            <h3>£35.99</h3>
+                            <img src="/img/assets/trash.png" alt="trashImage" class="trashImage">
+                        </div>
+                    </div>
+                </div>
+                <div class="cartBottom">
+                    <div class="subtotal">
+                        <h2>SUBTOTAL</h2>
+                        <h2>£107.97</h2>
+                    </div>
+                    <div class="proceedtocheckoutContainer">
+                        <a class="biggerButtonText" href="/html/checkout/billing.html"><button class="proceedtocheckout">Proceed to Checkout</button></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="notify" id="notify">
+
+            <div id="notifContent" class="notifyContent">
+                <h2>A product has been added to cart</h2>
+                <button id="notifyButton" class="notifyButton" onclick="openCartDirect()">View Cart</button>
+            </div>
+
+        </div>
+
+     </div>
+
+
+
+     <!----------------------------------------- Header -------------------------------------------->
+     <!-- Header -->
+     <div class="headerProductList">
+        <div class="headerContentProductList">
+            <h1 class="headerText">Browse Collection</h1>
+        </div>
+        
+     </div>
+
+    <!----------------------------------------- Content -------------------------------------------->
+     <div class="productListContent">
+
+         <!-- Filter Content -->
+        <div class="filters">
+
+            <div class="filter1">
+                <label for="filter">Filter:</label>
+
+                <select name="filter" id="filter">
+                    <option value="all products">all products</option>
+                    <option value="in stock only">in stock only</option>
+                </select>
+
+            </div>
+
+            <div class="filter2">
+                <label for="by">by:</label>
+
+                <select name="by" id="by">
+                    <option value="A-Z">A-Z</option>
+                    <option value="best selling">best selling</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product List -->
+        <div class="productListContainer">
+            <div class="products">
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/age of darkness.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Age of Darkness</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/age of enlightenment.png" alt="productImage" class="productListImage">
+                    <h3>Age of Enlightenment</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/catan base game.png" alt="productImage" class="productListImage">
+                    <h3>Catan (2015 Edition)</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/cities and knights.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Cities and Knights</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/rivals of catan.png" alt="productImage" class="productListImage">
+                    <h3>Rivals of Catan</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/traders and barbarians.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Traders and Barbarians</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/age of darkness.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Age of Darkness</h3>
+                </a>
+    
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/age of enlightenment.png" alt="productImage" class="productListImage">
+                    <h3>Age of Enlightenment</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/catan base game.png" alt="productImage" class="productListImage">
+                    <h3>Catan (2015 Edition)</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/cities and knights.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Cities and Knights</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/rivals of catan.png" alt="productImage" class="productListImage">
+                    <h3>Rivals of Catan</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/traders and barbarians.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Traders and Barbarians</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/catan base game.png" alt="productImage" class="productListImage">
+                    <h3>Catan (2015 Edition)</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/cities and knights.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Cities and Knights</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/rivals of catan.png" alt="productImage" class="productListImage">
+                    <h3>Rivals of Catan</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/traders and barbarians.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Traders and Barbarians</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/catan base game.png" alt="productImage" class="productListImage">
+                    <h3>Catan (2015 Edition)</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/cities and knights.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Cities and Knights</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/rivals of catan.png" alt="productImage" class="productListImage">
+                    <h3>Rivals of Catan</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/traders and barbarians.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Traders and Barbarians</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/catan base game.png" alt="productImage" class="productListImage">
+                    <h3>Catan (2015 Edition)</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/cities and knights.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Cities and Knights</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/rivals of catan.png" alt="productImage" class="productListImage">
+                    <h3>Rivals of Catan</h3>
+                </a>
+
+                <a class="regularProductList" href="/html/product_page.html">
+                    <img src="/img/products/traders and barbarians.png" alt="productImage" class="productListImage">
+                    <h3>Catan: Traders and Barbarians</h3>
+                </a>
+
+            </div>
+        </div>
+
+
+     </div>
+
+     <!----------------------------------------- Footer --------------------------------------------->
+     <!--Footer-->
+     <footer class="footer">
+
+        <div class="footnotes">
+            <p class="footnotesText">copyright whatever blah blah</p>
+        </div>
+
+        <div class="socialMedia">
+
+            <!--Twitter-->      
+            <div class="media">
+                <img src="/img/assets/Twitter.png" alt="Twitter" class="socialLogo">
+                <p class="footnotesText">
+                   @boardgameguru
+                </p>
+            </div>
+
+            <!--Facebook-->
+            <div class="media">
+                <img src="/img/assets/Facebook.png" alt="Facebook" class="socialLogo">
+                 <p class="footnotesText">
+                    Boardgameguru.com.uk
+                 </p>
+            </div>
+
+            <!--Telephone-->
+            <div class="media">
+                <img src="/img/assets/Telephone.png" alt="Telephone" class="socialLogo">
+                 <p class="footnotesText">
+                   07834281383
+                 </p>
+            </div>
+
+        </div>
+     
+     </footer>
+
+</body>
+</html>

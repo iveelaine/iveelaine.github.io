@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/type.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <script src="/js/function.js"></script>
+</head>
+<body class="checkoutBody">
+
+    <!-- Heading -->
+    <div class="checkoutHead">
+        <div class="cancelButton">
+            <button class="regularButton">
+                <a href="/html/home.html">
+                    Cancel
+                </a>
+            </button>
+        </div>
+
+        <div class="headerBreadcrumbContainer">
+            <h1>Check Out</h1>
+            <img src="/img/assets/payment.png" alt="billing" class="headerBreadcrumbImage">
+        </div>
+
+    </div>
+
+    <div class="checkoutFormContainer">
+        <div class="checkoutForm">
+            <form name="payment">
+
+                <div class="onecol">
+                    <!-- Name on Card -->
+                    <div class="fieldContainer">
+                        <label for="cardName" class="formLabel">Name on Card</label>
+                        <input type="text" name="cardName" class="formField" placeholder="First Last">
+                    </div><br>
+                </div>
+
+                <div class="twocol">
+                    <!-- Card Number -->
+                    <div class="fieldContainer">
+                        <label for="cardNumbers" class="formLabel">Card Number</label>
+                        <input type="text" name="cardName" class="formFieldCardNumber" placeholder="First Last">
+                    </div>
+
+                    <!-- Payment Options -->
+                    <div class="paymentOptionsContainer fieldContainer">
+                        <img src="/img/assets/paymentoptions.jpg" alt="paymentOptionsImage" class="paymentOptionsImage">
+                    </div><br>
+                </div>
+
+                <div class="twocol">
+                    <!-- Expiration -->
+                    <div class="fieldContainer">
+                        <label for="expiration" class="formLabel">Expiry Date</label>
+                        <input type="month" name="expiration" class="formFieldDate" placeholder="00/00">
+                    </div>
+
+                    <!-- CVC -->
+                    <div class="fieldContainer">
+                        <label for="cvc" class="formLabel">CVC</label>
+                        <input type="number" name="cvc" class="formFieldTwo" placeholder="000" min="000" max="999" maxlength="3">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="checkoutFoot">
+        <div class="footButons">
+            <a href="/html/checkout/shipping.html"><button class="checkoutButton">Previous</button></a>
+            <a href="/html/checkout/review.html"><button class="checkoutButton">Next</button></a>
+        </div>
+    </footer>
+
+</body>
+</html>  

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catan</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/type.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link rel="stylesheet" type="text/css" ref="https://fonts.google.com/specimen/Montserrat?query=montser#standard-styles">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/function.js"></script>
+</head>
+
+<body class="productPageBody">
+     <!-------------------------------------- Navigation Bar ---------------------------------------->
+     <!-- Navigation Bar -->
+     <nav class="nav">   
+        <!-- Hamburger -->
+       <div class="hamburger">
+            <img src="/img/assets/hamburger.png" alt="hamburger" class="hamburgerButton" onclick="openNav()">
+       </div>
+        
+        <!-- Logo -->
+       <div class="logo">
+           <a href="/html/home.html"><img class = "logoImage" src="/img/assets/logo.png" alt=""></a>
+       </div>
+       
+        <!-- Search box and icon -->
+        <div class="search">
+           <input class="searchBox" type="text" placeholder="Search..">
+           <a href=""><img class = "searchImage" src="/img/assets/search.png" alt="search button"></a>
+        </div>
+     </nav>
+
+     <!--------------------------------------- Side Nav -------------------------------------------->
+     <!-- Side Bar -->
+     <div class="menu">
+
+        <div class="sidenav" id="mySidenav">
+
+            <a href="javascript:void(0)" onclick="openCart()"><img class="cartImage" src="/img/assets/cart.png" alt="cart"></a>
+            <a href="javascript:void(0)" onclick="closeNav()"><img class="closeButton" src="/img/assets/xbutton.png" alt="x button"></a>
+
+            <div class="sideNavContent">
+                <a href="">About</a>
+                <a href="">Categories</a>
+                <a href="">FAQs</a>
+                <a href="">Contact Us</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Shipping</a>
+            </div>
+        </div>
+
+        <div class="sideCart" id="sideCart">
+
+            <a href="javascript:void(0)" onclick="closeCart()"><img class="closeButton" src="/img/assets/xbuttoncart.png" alt="x button"></a>
+            
+            <div class="cartContainer">
+                <div class="cartTop">
+                    <div class="cartItem">
+                        <img src="/img/products/catan base game.png" alt="cartProductImage" class="cartProductImage">
+                        
+                        <div class="cartInformation">
+                            <h3 class="cartproductname">Catan (2015 Edition)</h3>
+                            <label for="quantity" class="qtylabel">Qty:</label>
+                            <input name="quantity" type="number" class="qty">
+                        </div>
+                        <div class="cartPrice">
+                            <h3>£35.99</h3>
+                            <img src="/img/assets/trash.png" alt="trashImage" class="trashImage">
+                        </div>
+                    </div>
+                    <div class="cartItem">
+                        <img src="/img/products/catan base game.png" alt="cartProductImage" class="cartProductImage">
+                        
+                        <div class="cartInformation">
+                            <h3 class="cartproductname">Catan (2015 Edition)</h3>
+                            <label for="quantity" class="qtylabel">Qty:</label>
+                            <input name="quantity" type="number" class="qty">
+                        </div>
+                        <div class="cartPrice">
+                            <h3>£35.99</h3>
+                            <img src="/img/assets/trash.png" alt="trashImage" class="trashImage">
+                        </div>
+                    </div>
+                    <div class="cartItem">
+                        <img src="/img/products/catan base game.png" alt="cartProductImage" class="cartProductImage">
+                        
+                        <div class="cartInformation">
+                            <h3 class="cartproductname">Catan (2015 Edition)</h3>
+                            <label for="quantity" class="qtylabel">Qty:</label>
+                            <input name="quantity" type="number" class="qty">
+                        </div>
+                        <div class="cartPrice">
+                            <h3>£35.99</h3>
+                            <img src="/img/assets/trash.png" alt="trashImage" class="trashImage">
+                        </div>
+                    </div>
+                </div>
+                <div class="cartBottom">
+                    <div class="subtotal">
+                        <h2>SUBTOTAL</h2>
+                        <h2>£107.97</h2>
+                    </div>
+                    <div class="proceedtocheckoutContainer">
+                        <a class="biggerButtonText" href="/html/checkout/billing.html"><button class="proceedtocheckout">Proceed to Checkout</button></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="notify" id="notify">
+
+            <div id="notifContent" class="notifyContent">
+                <h2>A product has been added to cart</h2>
+                <button id="notifyButton" class="notifyButton" onclick="openCartDirect()">View Cart</button>
+            </div>
+
+        </div>
+
+     </div>
+
+     <!------------------------------------ Product Page Content -------------------------------------------->
+     <!-- Product Container -->
+     <div class="productPageContainer">
+
+        <!-- Display Image -->
+        <img src="/img/products/catan base game.png" alt="displayImage" class="displayImage" id="displayImage">
+
+
+        <!-- Right -->
+        <div class="productInformationContainer">
+           
+            <div class="productInformation">
+                    
+                    <h1 class="productName">Catan 2015</h1> 
+
+                    <h1 class="priceTag">£50.00</h1>
+
+                    <!-- Description -->
+                    <p class="productDescription">
+                        In CATAN (formerly The Settlers of Catan), players try to be the dominant force on the island of Catan by building settlements, cities, and roads. On each turn dice are rolled to determine what resources the island produces. Players build by spending resources (sheep, wheat, wood, brick and ore) that are depicted by these resource cards; each land type, with the exception of the unproductive desert, produces a specific resource: hills produce brick, forests produce wood, mountains produce ore, fields produce wheat, and pastures produce sheep. Setup includes randomly placing large hexagonal tiles (each showing a resource or the desert) in a honeycomb shape and surrounding them with water tiles, some of which contain ports of exchange. Number disks, which will correspond to die rolls (two 6-sided dice are used), are placed on each resource tile. Each player is given two settlements (think: houses) and roads (sticks) which are, in turn, placed on intersections and borders of the resource tiles. Players collect a hand of resource cards based on which hex tiles their last-placed house is adjacent to. A robber pawn is placed on the desert tile.
+                        A turn consists of possibly playing a development card, rolling the dice, everyone (perhaps) collecting resource cards based on the roll and position of houses (or upgraded cities—think: hotels) unless a 7 is rolled, turning in resource cards (if possible and desired) for improvements, trading cards at a port, and trading resource cards with other players. If a 7 is rolled, the active player moves the robber to a new hex tile and steals resource cards from other players who have built structures adjacent to that tile.
+                        Points are accumulated by building settlements and cities, having the longest road and the largest army (from some of the development cards), and gathering certain development cards that simply award victory points. When a player has gathered 10 points (some of which may be held in secret), he announces his total and claims the win.
+                        CATAN has won multiple awards and is one of the most popular games in recent history due to its amazing ability to appeal to experienced gamers as well as those new to the hobby.
+                    </p>
+                    
+            </div>
+        </div>
+
+     </div>
+
+     <div class="underProductPage">
+        <!-- Display Image Switch container -->
+         <div class="displayChangeContainer">
+            <img onclick="productView1()" id="changeDisplay1" src="/img/products/cities and knights.png" alt="displayChangeImage" class="displayChangeImage">
+            <img onclick="productView2()" id="changeDisplay2" src="/img/products/catan base game.png" alt="displayChangeImage" class="displayChangeImage">
+            <img onclick="productView3()" id="changeDisplay3" src="/img/products/seafarers.png" alt="displayChangeImage" class="displayChangeImage">
+            <img onclick="productView4()" id="changeDisplay4" src="/img/products/traders and barbarians.png" alt="displayChangeImage" class="displayChangeImage">
+        </div>
+
+        <!-- Add To Cart Button Container -->
+        <div class="addToCartContainer">
+            <!-- Add to Cart Button -->
+            <button class="addToCart" id="addtocart" onclick="addToCartResponsiveButton()">Add to Cart</button>
+            <i class="fa fa-heart-o hearticon" style="font-size:60px;" id="hearticon"></i>
+        </div>
+
+     </div>
+
+     <!------------------------------------------- Footer --------------------------------------------------->
+     <!--Footer-->
+     <footer class="footer">
+
+        <div class="footnotes">
+            <p class="footnotesText">Copyright BoardGameGuru UK, 2021</p>
+        </div>
+
+        <div class="socialMedia">
+
+            <!--Twitter-->      
+            <div class="media">
+                <img src="/img/assets/Twitter.png" alt="Twitter" class="socialLogo">
+                <p class="footnotesText">
+                   @boardgameguru
+                </p>
+            </div>
+
+            <!--Facebook-->
+            <div class="media">
+                <img src="/img/assets/Facebook.png" alt="Facebook" class="socialLogo">
+                 <p class="footnotesText">
+                    Boardgameguru.com.uk
+                 </p>
+            </div>
+
+            <!--Telephone-->
+            <div class="media">
+                <img src="/img/assets/Telephone.png" alt="Telephone" class="socialLogo">
+                 <p class="footnotesText">
+                   07834281383
+                 </p>
+            </div>
+
+        </div>
+     
+     </footer>
+
+</body>
+</html> 

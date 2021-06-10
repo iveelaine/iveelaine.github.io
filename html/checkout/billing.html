@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catan</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/type.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link rel="stylesheet" type="text/css" ref="https://fonts.google.com/specimen/Montserrat?query=montser#standard-styles">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/function.js"></script>
+</head>
+<body class="checkoutBody">
+
+     <!-- Heading -->
+     <div class="checkoutHead">
+        <div class="cancelButton">
+            <button class="regularButton">
+                <a href="/html/home.html">
+                    Cancel
+                </a>
+            </button>
+        </div>
+
+         <div class="headerBreadcrumbContainer">
+             <h1>Check Out</h1>
+             <img src="/img/assets/billing.png" alt="billing" class="headerBreadcrumbImage">
+         </div>
+
+     </div>
+
+     <div class="checkoutFormContainer">
+        <div class="checkoutForm">
+            <form name="billing">
+
+                <div class="twocol">
+                    <!-- First Name -->
+                    <div class="fieldContainer">
+                        <label for="fName" class="formLabel">First Name</label>
+                        <input type="text" name="fName" class="formFieldTwo" placeholder="First Name"> 
+                    </div>
+                    <!-- Last Name -->
+                    <div class="fieldContainer">
+                        <label for="lName" class="formLabel">Last Name</label>
+                        <input type="text" name="lName" class="formFieldTwo" placeholder="Last Name"> 
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="onecol">
+                    
+                    <!-- Email Address -->
+                    <div class="fieldContainer">
+                        <label for="eAddress" class="formLabel">Email Address</label>
+                        <input type="text" name="eAddress" class="formField" placeholder="firstlast@email.com">
+                    </div>
+
+                    <br>
+
+                    <!-- Country -->
+                    <div class="fieldContainer">
+                        <label for="country" class="formLabel">Country</label>
+                        <select name="country" class="formFieldSelect">
+                            <option value="United Kingdom">United Kingdom</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <!-- Address1 -->
+                    <div class="fieldContainer">
+                        <label for="address1" class="formLabel">Address 1</label>
+                        <input type="text" name="address1" class="formField" placeholder="Street Address">
+                    </div>
+
+                    <br>
+
+                    <!-- Address2 -->
+                    <div class="fieldContainer">
+                        <label for="address2" class="formLabel">Address 2</label>
+                        <input type="text" name="address2" class="formField" placeholder="Apartment, suite, unit, etc.">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="twocol">
+                    <!-- City -->
+                    <div class="fieldContainer">
+                        <label for="city" class="formLabel">City</label>
+                        <input type="text" name="city" class="formFieldTwo" placeholder="City Name">
+                    </div>
+
+                    <!-- Postal Code -->
+                    <div class="fieldContainer">
+                        <label for="postal" class="formLabel">Postal Code</label>
+                        <input type="number" name="pcode" class="formFieldTwo" placeholder="0000">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+     </div>
+
+     <footer class="checkoutFoot">
+         <div class="footButons">
+             <button class="checkoutButton disabledButton" disabled>Previous</button>
+             <a href="/html/checkout/shipping.html"><button class="checkoutButton">Next</button></a>
+         </div>
+     </footer>
+
+</body>
+</html>

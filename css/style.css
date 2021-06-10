@@ -1,0 +1,378 @@
+/*--------------------------------------- ROOT ---------------------------------------------*/
+:root {
+    --myTan:#E1D2C1;
+    --myBrown:#26140E;
+    --myOrange:#CC8225;
+}
+
+
+/*---------------------------------------- BODY --------------------------------------------*/
+body {
+    background-color:var(--myTan);
+}
+
+/*----------------------------------- NAVIGATION BAR ---------------------------------------*/
+.nav {
+    background-color:var(--myBrown);
+}
+
+/*--------------------------------------- HEADER -------------------------------------------*/
+/*HEADER IMAGE*/
+.header {
+    background-image: url(/img/products/featured.jpg);
+}
+
+/*HEADER IMAGE FILTER*/
+.headerContent {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.headerProductList {
+    background-image: url(/img/products/featured.jpg);
+}
+
+.headerContentProductList {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*------------------------------------ ANNOUNCEMENTS ---------------------------------------*/
+/*ANNOUNCEMENT OUTER OUTLINE*/
+.announcements {
+    outline: solid var(--myBrown) 4px;
+}
+
+/*ANNOUNCEMENT INNER OUTLINE*/
+.announcementp {
+    outline: solid var(--myBrown) 2px;
+}
+
+
+
+/*---------------------------------------- SEARCH BOX ----------------------------------------*/
+.searchBox {
+    background: none;
+    outline:none;
+    border-width: 0 0 1px;
+    border-color: white;
+
+}
+
+/*------------------------------------- SIDE NAVIGATION -----------------------------------*/
+/* Navigation side bar from tutorial: https://www.w3schools.com/howto/howto_js_sidenav.asp */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color:var(--myBrown);
+    overflow-x: hidden;
+    padding-top: 90px;
+    transition: 0.5s;
+    box-shadow: 0.5px 5px 90px black;
+}
+
+.sideCart {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color:var(--myTan);
+    overflow-x: hidden;
+    padding-top: 90px;
+    transition: 0.5s;
+    box-shadow: 0.5px 5px 90px black;
+}
+
+.notify {
+    height: 15%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    background-color:var(--myTan);
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    box-shadow: 0.5px 5px 90px black;
+}
+
+.notifyContent {
+    border: double var(--myBrown) 10px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+.sidenav .closeButton {
+    max-width: 8%;
+    height: auto;
+}
+
+.sidenav .cartImage {
+    max-width: 5%;
+    height: auto;
+}
+
+.sideCart .closeButton {
+    max-width: 2.5%;
+    height: auto;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*---------------------------------------- BUTTON -----------------------------------------*/
+/*REGULAR BUTTON*/
+.regularButton {
+    background-color: var(--myOrange);
+    border: none;
+    padding: 0.7em 2.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+/*BIGGER BUTTON*/
+.biggerButton {
+    background-color: var(--myOrange);
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em 5em;
+    cursor: pointer;
+}
+
+
+.addToCart {
+    background-color: var(--myOrange);
+    border: none;
+    border-radius: 0.3em;
+    pad: 1em 9em;
+    cursor: pointer;
+}
+
+.addToCart:hover {
+    background-color: #A76819;
+}
+
+.regularButton:hover {
+    background-color:#A76819;
+}
+
+.biggerButton:hover {
+    background-color: #A76819;
+}
+
+.seeMoreButton {
+    border: none;
+    width: 3%;
+    height: auto;
+}
+
+.displayChangeImage {
+    cursor:pointer;
+}
+
+.checkoutButton {
+    background-color: var(--myOrange);
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    width: 13.2em;
+    height: 3.5em;
+}
+
+.checkoutButton:hover {
+    background-color: #A76819;
+}
+
+.proceedtocheckout {
+    background-color: var(--myOrange);
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em;
+    cursor: pointer;
+    align-self: center;
+    width: 51.5em;
+    height: 3.5em;
+}
+
+.proceedtocheckout:hover {
+    background-color: #A76819;
+}
+
+.notifyButton {
+    background-color: var(--myOrange);
+    border: none;
+    margin-top: 0.4em;
+    padding: 0.7em 2.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+.notifyButton:hover {
+    background-color: #A76819;
+}
+
+.cancelButtonButton {
+    background-color: var(--myOrange);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5em 5em;
+    cursor: pointer;
+}
+/*------------------------------------------ FOOTER ---------------------------------------*/
+
+.footer {
+    background-color: var(--myBrown);
+}
+
+.checkoutFoot {
+    background-color: var(--myTan);
+}
+
+/*----------------------------------------- HOME PAGE ---------------------------------------*/
+.longProduct {
+    background-image: url(/img/products/featured.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.longProductFilter {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reviewInfo {
+    outline: solid var(--myBrown) 3px;
+}
+
+.billInfo {
+    outline: solid var(--myBrown) 4px;
+}
+
+.cartInfo {
+    outline: solid var(--myBrown) 4px;
+}
+
+.cartContent {
+    outline: solid var(--myBrown) 3px;
+}
+/*----------------------------------------- REVIEWS ---------------------------------------*/
+.reviewsContent p {
+    border-left: var(--myBrown);
+}
+
+/*-------------------------------------- PRODUCT PAGE --------------------------------------*/
+.productInformationContainer {
+    outline: solid var(--myBrown) 4px;
+}
+
+.productInformation {
+    outline: solid var(--myBrown) 3px;
+}
+
+/*---------------------------------------- CHECKOUT  ---------------------------------------*/
+.formField {
+    background-color: white;
+    border-radius: 0.3em;
+    border: none;
+    box-shadow: 3px 6px 10px gray;
+    height: 4em;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    width: 29.4em;
+    margin-top: 0.5em;
+}
+
+.formFieldTwo {
+    background-color: white;
+    border-radius: 0.3em;
+    border: none;
+    box-shadow: 3px 6px 10px gray;
+    height: 4em;
+    padding-left: 1.5em;
+    padding-top: 0.8em;
+    width: 13.7em;
+    margin-top: 0.5em;
+}
+
+.formFieldSelect {
+    background-color: white;
+    border-radius: 0.3em;
+    border: none;
+    box-shadow: 3px 6px 10px gray;
+    height: 4.5em;
+    padding-left: 1.5em;
+    padding-top: 0.8em;
+    width: 31.1em;
+}
+
+.disabledButton{
+    opacity: 50%;
+    cursor: default;
+}
+
+/*---------------------------------------- CHECKOUT  ---------------------------------------*/
+
+.paymentOptionsImage {
+    background-color: white;
+    border-radius: 0.6em;
+    border: none;
+    box-shadow: 3px 6px 10px gray;
+}
+
+.formFieldCardNumber{
+    background-color: white;
+    border-radius: 0.3em;
+    border: none;
+    box-shadow: 3px 6px 10px gray;
+    height: 4em;
+    width: 17em;
+    padding-left: 1.5em;
+    padding-top: 0.8em;
+    margin-right: 0.44em;
+}
+
+.formFieldDate {
+    background-color: white;
+    border-radius: 0.4em;
+    border: none;
+    box-shadow: 3px 6px 10px gray;
+    padding-left: 1.5em;
+    padding-top: 0.8em;
+    height: 5.4em;
+    width: 17.9em;
+    margin-top: 0.7em;
+}
+
+.cartItem {
+    display: flex;
+}
+
+.cartProductImage {
+    box-shadow: 3px 6px 10px gray;
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    height: auto;
+    width: 15%;
+}
+
+.trashImage{
+    cursor: pointer;
+}
+
+.qty {
+    border-radius: 0.5em;
+    border:none;
+    box-shadow: 3px 6px 10px gray;
+    width: 4em;
+    height: 2.5em;
+    margin-left: 0.5em;
+}

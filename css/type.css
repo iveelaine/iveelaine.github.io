@@ -1,0 +1,269 @@
+html {
+    font-size: 62.5%;
+}
+
+:root{
+    font-family:'Montserrat', sans-serif;
+    color: #26140E;
+
+    --xl-text: 7.0rem;
+    --l-text: 2.0rem;
+    --regular-text: 1.7rem;
+    --s-text: 1.5rem;
+}
+/*----------------------------------------- IMPORTED FONT -------------------------------------------*/
+/*ARTISUAL DECO*/
+@font-face {
+    font-family: 'artisual_deco_demoregular';
+    src: url('/artisual_deco/artisualdeco-regular-webfont.woff2') format('woff2'),
+         url('/artisual_deco/artisualdeco-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----------------------------------------- H PRESETS -------------------------------------------*/
+/*HEADING*/
+h1 {
+    font-family: 'artisual_deco_demoregular';
+    font-size: var(--xl-text);
+}
+
+/*SUB-HEADING*/
+h2 {
+    font-size: var(--l-text);
+    font-weight: bold;
+}
+
+/*PRODUCT NAMES*/
+h3 {
+    font-size: var(--regular-text);
+    cursor: pointer;
+}
+
+/*HYPERLINKS*/
+a {
+    text-decoration: none;
+}
+
+.regularProduct h3 {
+    text-align: center;
+}
+
+.products h3 {
+    text-align: center;
+    width: 20ch;
+}
+
+.cartContainer h3 {
+    font-size: var(--l-text);
+    cursor: default;
+    font-weight: bold;
+}
+
+.cartBottom h2 {
+    font-size: var(--l-text);
+    color: white;
+}
+
+.subtotal h2 {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-top: 1em;
+}
+
+.notifyContent {
+    color:#26140E;
+    font-size: var(--l-text);
+    text-align: center;
+}
+
+.longProductFilter h3 {
+    color: white;
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+
+.productListBody h3 {
+    font-weight: bold;
+    color: #26140E;
+}
+
+.filters label {
+    font-size: var(--l-text);
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.reviewForm p {
+    font-size: var(--l-text);
+}
+/*----------------------------------------- PRODUCT PAGE -------------------------------------------*/
+
+.productName {
+    color:#26140E;
+}
+
+.priceTag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
+.productDescription {
+    font-size: var(--regular-text);
+}
+
+.seeMoreText{
+    font-size: var(--regular-text);
+    font-weight: bold;
+    margin: 1em;
+    text-align: left;
+    cursor:pointer;
+}
+
+.bestContent h3 {
+    text-align: center;
+}
+
+/*----------------------------------------- HEADER -------------------------------------------*/
+/*FEATURED COLLECTION TEXT*/
+.headerText{
+    color:white;
+}
+
+/*-------------------------------------- SEARCH BOX TEXT ----------------------------------------*/
+.searchBox {
+    color: white;
+    font-size: var(--s-text);
+    font-weight: lighter;
+}
+
+/*----------------------------------------- ANNOUNCEMENT -------------------------------------------*/
+.announcementHeader {
+    font-weight: bold;
+    font-size: var(--regular-text);
+}
+
+.announcementp{
+    text-align: center;
+    font-size: var(--s-text);
+}
+
+/*----------------------------------------- BUTTON TEXT -------------------------------------------*/
+.regularButtonText{
+    color: white;
+    font-size: var(--regular-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.biggerButtonText {
+    color:white;
+    font-size: var(--regular-text);
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.biggerButton {
+    color:white;
+    font-size: var(--regular-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.addToCartText{
+    color: white;
+    font-size: var(--l-text);
+    font-weight: bold;
+}
+
+.cancelButton a {
+    color: white;
+    font-size: var(--l-text);
+    font-weight: bold;
+    padding: 1em 1em;
+}
+
+.checkoutButton {
+    color: white;
+    font-size: var(--l-text);
+    font-weight: bold;
+}
+
+.proceedtocheckout{
+    color: white;
+    font-size: var(--l-text);
+    font-weight: bold;
+}
+
+.notifyButton {
+    color: white;
+    font-size: var(--s-text);
+    font-weight: bold;
+}
+/*----------------------------------------- FOOTNOTES TEXT -------------------------------------------*/
+.footnotesText {
+    font-size: var(--s-text);
+    color: white;
+}
+
+
+/*----------------------------------------- SIDE NAV TEXT -------------------------------------------*/
+.sidenav a {
+    text-decoration: none;
+    font-size: var(--l-text);
+    color: #818181;
+}
+
+.reviewsContent p {
+    font-size: var(--l-text);
+    text-align: left;
+}
+
+/*----------------------------------------- CHECK OUT -------------------------------------------*/
+.formLabel{
+    font-weight: bold;
+    color:#26140E;
+    font-size: var(--regular-text);
+}
+
+.formField {
+    color:#26140E;
+    font-size: var(--regular-text);
+}
+
+.formFieldTwo {
+    color:#26140E;
+    font-size: var(--regular-text);
+}
+
+.formFieldSelect {
+    color:#26140E;
+    font-size: var(--regular-text);
+}
+
+.checkBoxContainer label {
+    color:#26140E;
+    font-size: var(--s-text);
+}
+
+.formFieldCardNumber {
+    color:#26140E;
+    font-size: var(--regular-text);
+}
+
+.confirmForm {
+    text-align: center;
+}
+
+.qtylabel {
+    font-size: var(--s-text);
+}
+
+.addToCart {
+    color:white;
+    font-size: var(--l-text);
+    font-weight: bold;
+    text-decoration: none;
+}
